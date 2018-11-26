@@ -15,7 +15,6 @@ describe Taxi do
     ride = Ride.create
     taxi.rides << ride
     taxi.save
-
     expect(ride.taxi).to eq(taxi)
   end
 end
